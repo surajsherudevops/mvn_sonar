@@ -4,7 +4,7 @@
 
   <groupId>sonar_test</groupId>
   <artifactId>com.sonar.maven</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>com.sonar.maven</name>
@@ -12,7 +12,7 @@
   
   <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  <sonar.host.url>http://20.185.71.158:9000</sonar.host.url>
+  <sonar.host.url>http://20.185.71.158:8080</sonar.host.url>
   <sonar.login>admin</sonar.login>
   <sonar.password>admin123</sonar.password>
   </properties>
@@ -27,9 +27,13 @@
   </dependencies>
   
   <distributionManagement>
+    <repository> 
+<id>releases</id>
+<url>http://20.185.71.158:8081/nexus/content/repositories/releases</url>
+</repository>
     <snapshotRepository>
        <id>nexus</id>
-       <url>http://20.62.241.200:8081/nexus/content/repositories/snapshots</url>
+       <url>http://20.185.71.158:8081/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 
