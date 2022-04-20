@@ -17,7 +17,7 @@
   <maven.compiler.source>1.8</maven.compiler.source>
   <maven.compiler.target>1.8</maven.compiler.target>
 
-  <sonar.host.url>http://13.235.68.97:9000</sonar.host.url>
+  <sonar.host.url>http://3.110.224.9:9000</sonar.host.url>
   <sonar.login>admin</sonar.login>
   <sonar.password>admin123</sonar.password>
   </properties>
@@ -35,11 +35,11 @@
   <distributionManagement>
     <repository>
 	<id>nexus</id>
-	<url>http://13.235.68.97:8081/nexus/content/repositories/releases</url>
+	<url>http://3.110.224.9:8081/nexus/content/repositories/releases</url>
 	</repository>
     <snapshotRepository>
        <id>nexus</id>
-       <url>http://13.235.68.97:8081/nexus/content/repositories/snapshots</url>
+       <url>http://3.110.224.9:8081/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 
